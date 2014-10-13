@@ -28,6 +28,9 @@
                             <constraint firstAttribute="centerX" secondItem="Sfg-cw-Dff" secondAttribute="centerX" constant="10" id="Itw-gb-bI6">
                                 <variation key="heightClass=regular" constant="0.0"/>
                             </constraint>
+                            <constraint firstItem="Sfg-cw-Dff" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="364" id="iU3-Dy-rIt">
+                                <variation key="heightClass=regular" constant="0.0"/>
+                            </constraint>
                             <constraint firstAttribute="centerY" secondItem="Sfg-cw-Dff" secondAttribute="centerY" constant="355" id="wEA-Iv-ya2">
                                 <variation key="heightClass=regular" constant="0.0"/>
                             </constraint>
@@ -35,13 +38,15 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="Itw-gb-bI6"/>
+                                <exclude reference="iU3-Dy-rIt"/>
                                 <exclude reference="wEA-Iv-ya2"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
                             <mask key="constraints">
                                 <include reference="Itw-gb-bI6"/>
-                                <include reference="wEA-Iv-ya2"/>
+                                <include reference="iU3-Dy-rIt"/>
+                                <exclude reference="wEA-Iv-ya2"/>
                             </mask>
                         </variation>
                     </view>
