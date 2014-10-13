@@ -13,6 +13,7 @@
 		159C10EE19EC391C00EC35BD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 159C10ED19EC391C00EC35BD /* Images.xcassets */; };
 		159C10F119EC391C00EC35BD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 159C10EF19EC391C00EC35BD /* LaunchScreen.xib */; };
 		159C10FD19EC391C00EC35BD /* swiftyAdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159C10FC19EC391C00EC35BD /* swiftyAdTests.swift */; };
+		159C110719EC394100EC35BD /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 159C110619EC394100EC35BD /* iAd.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		159C10F619EC391C00EC35BD /* swiftyAdTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftyAdTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		159C10FB19EC391C00EC35BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		159C10FC19EC391C00EC35BD /* swiftyAdTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftyAdTests.swift; sourceTree = "<group>"; };
+		159C110619EC394100EC35BD /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				159C110719EC394100EC35BD /* iAd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +80,7 @@
 		159C10E319EC391B00EC35BD /* swiftyAd */ = {
 			isa = PBXGroup;
 			children = (
+				159C110619EC394100EC35BD /* iAd.framework */,
 				159C10E619EC391C00EC35BD /* AppDelegate.swift */,
 				159C10E819EC391C00EC35BD /* ViewController.swift */,
 				159C10EA19EC391C00EC35BD /* Main.storyboard */,

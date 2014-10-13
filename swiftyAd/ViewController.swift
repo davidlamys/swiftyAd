@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import iAd
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, ADBannerViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,5 +22,22 @@ class ViewController: UIViewController {
     }
 
 
+}
+
+extension ViewController: ADBannerViewDelegate {
+    
+    func bannerViewDidLoadAd(banner: ADBannerView!) {
+        UIView.beginAnimations(nil, context: nil)
+        UIView.setAnimationDuration(1)
+        banner.alpha = 1
+        UIView.commitAnimations()
+    }
+    
+    func bannerView(banner: ADBannerView!, didFailToReceiveAdWithError error: NSError!) {
+        UIView.beginAnimations(nil, context: nil)
+        UIView.setAnimationDuration(1)
+        banner.alpha = 0
+        UIView.commitAnimations()
+    }
 }
 
